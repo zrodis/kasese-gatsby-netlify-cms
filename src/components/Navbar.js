@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/KCHEF-Logo.png'
+import logo from '../img/logo/KCHEF-Logo.png'
+import { DonateButton } from './DonateButton'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -44,7 +44,18 @@ const Navbar = class extends React.Component {
             <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="KCHEF"/> KCHEF
             </Link>
-            {/* Hamburger menu */}
+
+            <div className="has-text-centered navbar-item center-on-mobile">
+              <DonateButton />
+            </div>
+            {/* { 
+              this.state.navBarActiveClass === '' &&
+              <div className={`navbar-end ${this.state.navBarActiveClass}`}>
+                <DonateButton anchorProps={{className:"navbar-item"}}/>
+              </div>
+            } */}
+            {/* Hamburger button */}
+            
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -55,6 +66,8 @@ const Navbar = class extends React.Component {
               <span />
             </div>
           </div>
+          
+          
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
@@ -62,9 +75,6 @@ const Navbar = class extends React.Component {
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/about">
                 About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
               </Link>
               <Link className="navbar-item" to="/blog">
                 Blog
@@ -76,16 +86,7 @@ const Navbar = class extends React.Component {
                 Form Examples
               </Link>
             </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className='button is-medium is-primary' >Donate</button>
-              </a>
-            </div>
+         
           </div>
         </div>
       </nav>

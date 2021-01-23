@@ -7,14 +7,20 @@ const FeatureGrid = ({ gridItems }) => (
     {gridItems.map((item) => (
       <div key={item.text} className="column is-6">
         <section className="section">
-          <div className="has-text-centered">
+          <h1 className="has-text-centered primary-color" >{item.heading}</h1>
+          <div className="has-text-centered" style={{overflow:'hidden', display:'flex', marginBottom: '5px'}}>
             <div
               style={{
-                width: '240px',
+                width: '400px',
+                height: '250px',
                 display: 'inline-block',
+                overflow: 'hidden',
+                justifySelf:'center'
               }}
             >
-              <PreviewCompatibleImage imageInfo={item} />
+
+                <PreviewCompatibleImage imageInfo={item} imageStyle={{height:'100%'}}/>
+
             </div>
           </div>
           <p>{item.text}</p>
@@ -28,6 +34,7 @@ FeatureGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      heading: PropTypes.string,
       text: PropTypes.string,
     })
   ),

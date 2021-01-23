@@ -3,8 +3,10 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
+import {DonateButton} from '../components/DonateButton'
 import BlogRoll from '../components/BlogRoll'
+import Features from '../components/Features'
+
 
 export const IndexPageTemplate = ({
   image,
@@ -37,31 +39,21 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
+          className="frontpage-header has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          style={{fonstSize:'100px'}}
         >
-          {title}
+          {heading}
         </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
+        <h2
+          className="frontpage-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
         >
-          {subheading}
-        </h3>
+          {
+            subheading.split('[linebreak]').map(sh => {
+              return <React.Fragment key={sh}> {sh}<br/></React.Fragment >
+            })
+          }
+          
+        </h2>
       </div>
     </div>
     <section className="section section--gradient">
@@ -78,26 +70,19 @@ export const IndexPageTemplate = ({
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
+
                 <Features gridItems={intro.blurbs} />
+
+
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
+                    <DonateButton buttonClass="button is-large is-primary"/>
                   </div>
                 </div>
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
+                  <h2 className="has-text-weight-semibold is-size-2">
                     Latest stories
-                  </h3>
+                  </h2>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
@@ -175,17 +160,16 @@ export const pageQuery = graphql`
         description
         intro {
           blurbs {
+            heading
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 400, quality: 80) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
             text
           }
-          heading
-          description
         }
       }
     }
