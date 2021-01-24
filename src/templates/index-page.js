@@ -4,9 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import {DonateButton} from '../components/DonateButton'
-import BlogRoll from '../components/BlogRoll'
 import Features from '../components/Features'
-
 
 export const IndexPageTemplate = ({
   image,
@@ -39,14 +37,13 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="frontpage-header has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{ borderRadius:'5px'}}
+          className="frontpage-header has-text-weight-bold"
+          style={{fontSize:'3rem'}}
         >
           {heading}
         </h1>
         <h2
           className="frontpage-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{ borderRadius:'5px'}}
         >
           {
             subheading.split('[linebreak]').map(sh => {
@@ -80,17 +77,19 @@ export const IndexPageTemplate = ({
                     <DonateButton buttonProps={{className:"button is-large is-primary"}} />
                   </div>
                 </div>
-                <div className="column is-12">
-                  <h2 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h2>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
+
+                <div className="column is-12 has-text-centered">
+          
+                  <Link  to="/about">
+
+                  <button 
+                      className='button is-medium is-primary is-outlined' 
+                  >
+                      {"Read more about us >"}
+                  </button>
+                  </Link>
                 </div>
+
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap')
 
 // Config vars
 $kasese-purple: #9A4EAD
@@ -8,11 +9,17 @@ $primary: $kasese-purple
 $primary-invert: $kasese-purple-invert
 $body-color: #333
 $black: #2b2523
-.primary-color
-  color: $primary
+
+$header-font: 'Karla', 'Helvetica', 'Arial', sans-serif
+
+  .primary-color
+    color: $primary
 
 .navbar .navbar-menu
   box-shadow: none !important
+
+h1, h2, h3, h5, h5, h6
+  font-family: $header-font !important
 
 .frontpage-header
   text-align: center
@@ -53,7 +60,7 @@ $black: #2b2523
 
 .full-width-image
   width: 100vw
-  height: 600px
+  height: 500px
   background-size: cover
   background-position: bottom
   display: flex
