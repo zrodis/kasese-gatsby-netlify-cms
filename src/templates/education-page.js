@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import {DonateButton} from '../components/DonateButton'
 import Features from '../components/Features'
 
-export const IndexPageTemplate = ({
+export const EducationPageTemplate = ({
   image,
   title,
   heading,
@@ -99,7 +99,7 @@ export const IndexPageTemplate = ({
   </div>
 )
 
-IndexPageTemplate.propTypes = {
+EducationPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -111,12 +111,12 @@ IndexPageTemplate.propTypes = {
   }),
 }
 
-const IndexPage = ({ data }) => {
+const EducationPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <IndexPageTemplate
+      <EducationPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -129,7 +129,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
-IndexPage.propTypes = {
+EducationPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -137,11 +137,11 @@ IndexPage.propTypes = {
   }),
 }
 
-export default IndexPage
+export default EducationPage
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+  query EducationPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "education-page" } }) {
       frontmatter {
         title
         image {
