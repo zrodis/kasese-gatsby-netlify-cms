@@ -73,7 +73,7 @@ export const IndexPageTemplate = ({
 
 
                 <div className="columns">
-                  <div className="column is-12 has-text-centered">
+                  <div className="column is-12 has-text-centered" style={{marginTop:'5rem', marginBottom:'5rem'}}>
                     <DonateButton buttonProps={{className:"button is-large is-primary"}} />
                   </div>
                 </div>
