@@ -7,7 +7,7 @@ const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map((item) => (
       <div key={item.text} className="column is-6">
-        <section className="section" style={{background:kasesePurple, color:'#fff', borderRadius:'5px' }}>
+        <section className="section" style={{background:kasesePurple, color:'#fff', borderRadius:'5px', padding:'1.5rem' }}>
           <h1 className="has-text-centered white-header-override">{item.heading}</h1>
           <div className="has-text-centered" style={{overflow:'hidden', display:'flex', marginBottom: '5px'}}>
             <div
