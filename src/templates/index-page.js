@@ -35,17 +35,18 @@ export const IndexPageTemplate = ({
           lineHeight: '1',
           justifyContent: 'space-around',
           alignItems: 'left',
-          flexDirection: 'column',
+          flexDirection: 'column'
         }}
       >
         <h1
           className="frontpage-header has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{fonstSize:'100px'}}
+          style={{ borderRadius:'5px'}}
         >
           {heading}
         </h1>
         <h2
           className="frontpage-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          style={{ borderRadius:'5px'}}
         >
           {
             subheading.split('[linebreak]').map(sh => {
@@ -76,7 +77,7 @@ export const IndexPageTemplate = ({
 
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <DonateButton buttonClass="button is-large is-primary"/>
+                    <DonateButton buttonProps={{className:"button is-large is-primary"}} />
                   </div>
                 </div>
                 <div className="column is-12">

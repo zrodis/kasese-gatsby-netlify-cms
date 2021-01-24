@@ -45,7 +45,7 @@ const Navbar = class extends React.Component {
               <img src={logo} alt="KCHEF"/> KCHEF
             </Link>
 
-            <div className="has-text-centered navbar-item center-on-mobile">
+            <div className="has-text-centered navbar-item">
               <DonateButton />
             </div>
             {/* { 

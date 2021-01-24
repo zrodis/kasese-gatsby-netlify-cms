@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import { kasesePurple } from '../components/Layout'
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map((item) => (
       <div key={item.text} className="column is-6">
-        <section className="section">
-          <h1 className="has-text-centered primary-color" >{item.heading}</h1>
+        <section className="section" style={{background:kasesePurple, color:'#fff', borderRadius:'5px' }}>
+          <h1 className="has-text-centered" style={{color:'#fff'}}>{item.heading}</h1>
           <div className="has-text-centered" style={{overflow:'hidden', display:'flex', marginBottom: '5px'}}>
             <div
               style={{
