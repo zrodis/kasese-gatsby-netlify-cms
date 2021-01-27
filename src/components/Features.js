@@ -38,7 +38,7 @@ const FeatureGrid = ({ gridItems }) => (
               />
             </div>
           </div>
-          <p>{item.text}</p>
+          <p className="has-text-weight-semibold">{item.text}</p>
         </section>
       </div>
     ))}
