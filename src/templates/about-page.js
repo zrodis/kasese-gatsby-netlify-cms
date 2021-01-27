@@ -4,16 +4,40 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import { MainSectionWrapper } from '../components/MainSectionWrapper'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = (props) => {
+  const { title, content, contentComponent, frontmatter } = props
   const PageContent = contentComponent || Content
 
-  console.log('content', content)
+  console.log('props', props)
   return (
     <MainSectionWrapper>
       <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
         {title}
       </h2>
+      {frontmatter.intro.blurbs.map((blurb) => {
+        return (
+          <div className="content" key={blurb.heading}>
+            <h3 className="is-size-4 has-text-weight-bold is-bold-light">
+              {blurb.heading}
+            </h3>
+            {blurb.image ? (
+              <div className="columns">
+                <div className="column is-6">
+                  <PreviewCompatibleImage imageInfo={blurb} />
+                  
+                </div>
+                <div className="column is-6">
+                <p>{blurb.text}</p>
+              </div>
+</div>
+            ) : (
+              <p>{blurb.text}</p>
+            )}
+          </div>
+        )
+      })}
       <PageContent className="content" content={content} />
     </MainSectionWrapper>
   )
@@ -34,6 +58,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        frontmatter={post.frontmatter}
       />
     </Layout>
   )
