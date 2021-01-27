@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import {DonateButton} from '../components/DonateButton'
+import { DonateButton } from '../components/DonateButton'
 import Features from '../components/Features'
 
 export const EducationPageTemplate = ({
@@ -33,24 +33,25 @@ export const EducationPageTemplate = ({
           lineHeight: '1',
           justifyContent: 'space-around',
           alignItems: 'left',
-          flexDirection: 'column'
+          flexDirection: 'column',
         }}
       >
         <h1
           className="frontpage-header has-text-weight-bold"
-          style={{fontSize:'3rem'}}
+          style={{ fontSize: '3rem' }}
         >
           {heading}
         </h1>
-        <h2
-          className="frontpage-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-        >
-          {
-            subheading.split('[linebreak]').map(sh => {
-              return <React.Fragment key={sh}> {sh}<br/></React.Fragment >
-            })
-          }
-          
+        <h2 className="frontpage-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen">
+          {subheading.split('[linebreak]').map((sh) => {
+            return (
+              <React.Fragment key={sh}>
+                {' '}
+                {sh}
+                <br />
+              </React.Fragment>
+            )
+          })}
         </h2>
       </div>
     </div>
@@ -65,31 +66,29 @@ export const EducationPageTemplate = ({
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
-                    <p className="subtitle body-color-override"><strong>{mainpitch.description}</strong></p>
+                    <p className="subtitle body-color-override">
+                      <strong>{mainpitch.description}</strong>
+                    </p>
                   </div>
                 </div>
 
                 <Features gridItems={intro.blurbs} />
 
-
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <DonateButton buttonProps={{className:"button is-large is-primary"}} />
+                    <DonateButton
+                      buttonProps={{ className: 'button is-large is-primary' }}
+                    />
                   </div>
                 </div>
 
                 <div className="column is-12 has-text-centered">
-          
-                  <Link  to="/about">
-
-                  <button 
-                      className='button is-medium is-primary is-outlined' 
-                  >
-                      {"Read more about us >"}
-                  </button>
+                  <Link to="/about">
+                    <button className="button is-medium is-primary is-outlined">
+                      {'Read more about us >'}
+                    </button>
                   </Link>
                 </div>
-
               </div>
             </div>
           </div>

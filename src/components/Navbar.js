@@ -41,14 +41,14 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            
-
             <div className="has-text-centered navbar-item">
-              <DonateButton buttonProps={{className:'button is-small is-primary'}}/>
+              <DonateButton
+                buttonProps={{ className: 'button is-small is-primary' }}
+              />
             </div>
 
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="KCHEF"/> KCHEF
+              <img src={logo} alt="KCHEF" /> KCHEF
             </Link>
             {/* { 
               this.state.navBarActiveClass === '' &&
@@ -57,7 +57,7 @@ const Navbar = class extends React.Component {
               </div>
             } */}
             {/* Hamburger button */}
-            
+
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -68,8 +68,7 @@ const Navbar = class extends React.Component {
               <span />
             </div>
           </div>
-          
-          
+
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
@@ -88,7 +87,6 @@ const Navbar = class extends React.Component {
                 Contact
               </Link>
             </div>
-         
           </div>
         </div>
       </nav>
