@@ -2,15 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import { HTMLContent } from '../components/Content'
 import { MainSectionWrapper } from '../components/MainSectionWrapper'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const AboutPageTemplate = (props) => {
   const { title, content, contentComponent, frontmatter } = props
-  const PageContent = contentComponent || Content
 
-  console.log('props', props)
   return (
     <MainSectionWrapper>
       <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
@@ -26,19 +24,18 @@ export const AboutPageTemplate = (props) => {
               <div className="columns">
                 <div className="column is-6">
                   <PreviewCompatibleImage imageInfo={blurb} />
-                  
                 </div>
                 <div className="column is-6">
-                <p>{blurb.text}</p>
+                  <p>{blurb.text}</p>
+                </div>
               </div>
-</div>
             ) : (
               <p>{blurb.text}</p>
             )}
           </div>
         )
       })}
-      <PageContent className="content" content={content} />
+      <HTMLContent className="content" content={content} />
     </MainSectionWrapper>
   )
 }
@@ -46,7 +43,6 @@ export const AboutPageTemplate = (props) => {
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  contentComponent: PropTypes.func,
 }
 
 const AboutPage = ({ data }) => {
@@ -55,7 +51,6 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <AboutPageTemplate
-        contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
         frontmatter={post.frontmatter}

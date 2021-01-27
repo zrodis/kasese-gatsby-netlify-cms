@@ -19,7 +19,6 @@ intro:
 
 -   [The Education Program](/education) provides critically needed education to more than 450 vulnerable children in primary and secondary school as well as vocational and university education.
 -   [The Health Program](/health) supports the KCHEF Medical Center
--   The clinic meets the daily medical needs of at least 100 patients a day, most of them women and children.
 -   The clinic staff manages community outreach programs to deliver public health services to outlying communities including childhood vaccinations, male circumcision and pre-natal care.
 
 The steadfast delivery of excellent health and education services to the people of the region fuels our optimism for and commitment to the mission in Kasese. Now is the time to recommit and re-invest in its work to save lives through health and education.
