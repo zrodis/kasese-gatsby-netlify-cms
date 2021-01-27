@@ -60,7 +60,7 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
+                <div id="summary" className="content" style={{marginBottom: '4rem'}}>
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
@@ -73,7 +73,7 @@ export const IndexPageTemplate = ({
 
 
                 <div className="columns">
-                  <div className="column is-12 has-text-centered" style={{marginTop:'5rem', marginBottom:'5rem'}}>
+                  <div className="column is-12 has-text-centered" style={{marginTop:'5rem', marginBottom:'3rem'}}>
                     <DonateButton buttonProps={{className:"button is-large is-primary"}} />
                   </div>
                 </div>
