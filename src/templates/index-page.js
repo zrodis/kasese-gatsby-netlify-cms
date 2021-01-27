@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { DonateButton } from '../components/DonateButton'
 import Features from '../components/Features'
+import { MainSectionWrapper } from '../components/MainSectionWrapper'
 
 export const IndexPageTemplate = ({
   image,
@@ -55,53 +56,41 @@ export const IndexPageTemplate = ({
         </h2>
       </div>
     </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div
-                  id="summary"
-                  className="content"
-                  style={{ marginBottom: '4rem' }}
-                >
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <p className="subtitle body-color-override">
-                      <strong>{mainpitch.description}</strong>
-                    </p>
-                  </div>
-                </div>
-
-                <Features gridItems={intro.blurbs} />
-
-                <div className="columns">
-                  <div
-                    className="column is-12 has-text-centered"
-                    style={{ marginTop: '5rem', marginBottom: '3rem' }}
-                  >
-                    <DonateButton
-                      buttonProps={{ className: 'button is-large is-primary' }}
-                    />
-                  </div>
-                </div>
-
-                <div className="column is-12 has-text-centered">
-                  <Link to="/about">
-                    <button className="button is-medium is-primary is-outlined">
-                      {'Read more about us >'}
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+    <MainSectionWrapper>
+      <div className="content">
+        <div id="summary" className="content" style={{ marginBottom: '4rem' }}>
+          <div className="tile">
+            <h1 className="title">{mainpitch.title}</h1>
+          </div>
+          <div className="tile">
+            <p className="subtitle body-color-override">
+              <strong>{mainpitch.description}</strong>
+            </p>
           </div>
         </div>
+
+        <Features gridItems={intro.blurbs} />
+
+        <div className="columns">
+          <div
+            className="column is-12 has-text-centered"
+            style={{ marginTop: '5rem', marginBottom: '3rem' }}
+          >
+            <DonateButton
+              buttonProps={{ className: 'button is-large is-primary' }}
+            />
+          </div>
+        </div>
+
+        <div className="column is-12 has-text-centered">
+          <Link to="/about">
+            <button className="button is-medium is-primary is-outlined">
+              {'Read more about us >'}
+            </button>
+          </Link>
+        </div>
       </div>
-    </section>
+    </MainSectionWrapper>
   </div>
 )
 
