@@ -1,8 +1,15 @@
+-   footer
+
+    -   copyright
+    -   my link and gatsbyjs link
+
 -   pages
 
     -   about page
         -   an image or two would be nice
     -   education page
+    -   contact form
+        -   send to jim's email
 
 -   add google analytics
 -   monitor website status - get alert when it goes down
