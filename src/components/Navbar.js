@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo/KCHEF-Logo.png'
+import logo from '../img/logo/kchef_logo_2021.svg'
+import logoKchef from '../img/logo/kchef_logo_2021_Karla-outline.svg'
 import { DonateButton } from './DonateButton'
 
 const Navbar = class extends React.Component {
@@ -47,9 +48,10 @@ const Navbar = class extends React.Component {
               />
             </div>
 
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="KCHEF" /> KCHEF
-            </Link>
+              <Link to="/" id='kchef-logo' className="navbar-item" title="Logo">
+                <img src={logoKchef} style={{maxHeight: '5rem', width: '9rem', height: 'auto'}} alt="KCHEF" />
+              </Link>
+
             {/* { 
               this.state.navBarActiveClass === '' &&
               <div className={`navbar-end ${this.state.navBarActiveClass}`}>

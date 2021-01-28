@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
 import Layout from '../components/Layout'
 import { DonateButton } from '../components/DonateButton'
 import Features from '../components/Features'
 import { MainSectionWrapper } from '../components/MainSectionWrapper'
+import logoKchefWhite from '../img/logo/kchef_logo_2021_Karla-outline_white.svg'
+
 
 export const IndexPageTemplate = ({
   image,
@@ -38,10 +39,9 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="frontpage-header has-text-weight-bold"
-          style={{ fontSize: '3rem' }}
+          className="frontpage-header "
         >
-          {heading}
+          <img src={logoKchefWhite} style={{fill:'#fff'}} alt="Adult and child logo" />
         </h1>
         <h2 className="frontpage-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen">
           {subheading.split('[linebreak]').map((sh) => {
