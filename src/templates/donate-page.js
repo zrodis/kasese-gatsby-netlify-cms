@@ -10,7 +10,9 @@ export const DonatePageTemplate = (props) => {
 
   return (
     <MainSectionWrapper>
-      <div>
+      
+      <div style={{textAlign:"center", marginBottom:"2rem"}}>
+      <h1 className="is-size-4">To donate with credit card via PayPal click here:</h1>
         <form
           action="https://www.paypal.com/cgi-bin/webscr"
           method="post"

@@ -37,13 +37,14 @@ export const IndexPageTemplate = ({
           flexDirection: 'column',
         }}
       >
-        <h1 className="frontpage-header ">
+        <div className="frontpage-header" style={{padding:'1.2rem'}}>
+
           <img
             src={logoKchefWhite}
             style={{ fill: '#fff' }}
             alt="Adult and child logo"
           />
-        </h1>
+
         <h2 className="frontpage-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen">
           {subheading.split('[linebreak]').map((sh) => {
             return (
@@ -55,6 +56,7 @@ export const IndexPageTemplate = ({
             )
           })}
         </h2>
+        </div>
       </div>
     </div>
     <MainSectionWrapper>
