@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'KCHEF - Kasese Community Health and Education Foundation',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Working to transform healthcare delivery and educational opportunities in the Rwenzori region of Uganda.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
