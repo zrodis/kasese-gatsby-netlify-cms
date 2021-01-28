@@ -1,9 +1,9 @@
 ---
 templateKey: education-page
-title: KCHEF - Kasese Community Health and Education Foundation
+title: KCHEF - Education
 image: /img/2021_jan_1_covered_benches.jpg
-heading: KCHEF
-subheading: 'Kasese Community[linebreak]Health and Education Foundation'
+heading: Education
+subheading: 'Education'
 mainpitch:
     title: Rebuilding a community through health and education
     description: >
@@ -28,12 +28,12 @@ main:
         journey. We personally visit each farm to make sure the conditions are
         optimal for the plants, farmers and the local environment.
     image1:
-        alt: A close-up of a paper filter filled with ground coffee
-        image: /img/products-grid3.jpg
+        alt: road
+        image: /img/mountain_road.png
     image2:
-        alt: A green cup of a coffee on a wooden table
-        image: /img/products-grid2.jpg
+        alt: road
+        image: /img/mountain_road.png
     image3:
-        alt: Coffee beans
-        image: /img/products-grid1.jpg
+        alt: road
+        image: /img/mountain_road.png
 ---
