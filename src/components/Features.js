@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import { kasesePurple } from '../components/Layout'
+import { kaseseBlack } from '../components/Layout'
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
@@ -10,7 +10,7 @@ const FeatureGrid = ({ gridItems }) => (
         <section
           className="section"
           style={{
-            background: kasesePurple,
+            background: kaseseBlack,
             color: '#fff',
             borderRadius: '5px',
             padding: '1.5rem',

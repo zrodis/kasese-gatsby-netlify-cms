@@ -5,6 +5,8 @@ import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
+import { DonateButton } from './DonateButton'
+
 
 const Footer = class extends React.Component {
   render() {
@@ -16,6 +18,7 @@ const Footer = class extends React.Component {
             alt="KCHEF"
             style={{ width: '14em', height: '10em' }}
           />
+          
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
@@ -34,15 +37,12 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/health">
-                        Health
+                    <Link className="navbar-item" to="/contact">
+                        Contact
                       </Link>
+                   
                     </li>
-                    <li>
-                      <Link className="navbar-item" to="/education">
-                        Education
-                      </Link>
-                    </li>
+           
                    
                   </ul>
                 </section>
@@ -51,19 +51,26 @@ const Footer = class extends React.Component {
                 <section>
                   <ul className="menu-list">
                     <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
+                    <Link className="navbar-item" to="/health">
+                        Health
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
+                      <Link className="navbar-item" to="/education">
+                        Education
                       </Link>
                     </li>
                   </ul>
                 </section>
               </div>
-              <div className="column is-4 social">
+              
+ 
+              <div className="column is-4">
+
+              
+              <DonateButton     buttonProps={{className:"is-large button is-white"}}         />
+              <div className="social">
+
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
@@ -93,6 +100,7 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
+              </div>
               </div>
             </div>
           </div>

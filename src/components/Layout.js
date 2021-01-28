@@ -7,6 +7,7 @@ import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
 export const kasesePurple = '#9A4EAD'
+export const kaseseBlack = '#2b182f'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()

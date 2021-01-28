@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo/kchef_logo_2021.svg'
 import logoKchef from '../img/logo/kchef_logo_2021_Karla-outline.svg'
 import { DonateButton } from './DonateButton'
 
@@ -43,9 +42,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <div className="has-text-centered navbar-item">
-              <DonateButton
-                buttonProps={{ className: 'button is-small is-primary' }}
-              />
+              <DonateButton              />
             </div>
 
               <Link to="/" id='kchef-logo' className="navbar-item" title="Logo">
