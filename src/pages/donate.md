@@ -2,19 +2,6 @@
 templateKey: 'donate-page'
 path: /donate
 title: Donate
-
-intro:
-    blurbs:
-        - image: /img/mountain_road.png
-          heading: Kasese, Uganda
-          text: >
-              KCHEF focuses on Kasese and the Rwenzori district of southwestern Uganda. Although a community of extreme poverty, it holds extraordinary resilience and promise for a future in local leadership who believe in and meet high standards for transparency and competence in health and education services.
-        - heading: Who are we?
-          text: >
-              KCHEF (formerly the Bishop Masereka Christian Foundation) is a collaboration of Ugandans and U.S. supporters to develop and achieve self-sufficiency. As a locally-led organization, KCHEF represents the single most effective way to empower a community in a region severely impacted by conflict, disease, and extreme poverty.
-        - heading: What do we do?
-          text: >
-              The mission of KCHEF serves the community of Kasese through health care for women and infants and education for children.
 ---
 
 # We Can All Make a Difference in Kasese, Uganda

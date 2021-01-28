@@ -66,33 +66,13 @@ DonatePage.propTypes = {
 }
 
 export default DonatePage
-//8844b65c-3fc5-5db4-9603-6e98353103b5
+
 export const donatePageQuery = graphql`
   query DonatePage {
     markdownRemark(frontmatter: { templateKey: { eq: "donate-page" } }) {
       html
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        intro {
-          blurbs {
-            heading
-            image {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 80) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-        }
       }
     }
   }
