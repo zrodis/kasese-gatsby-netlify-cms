@@ -4,10 +4,9 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 import { MainSectionWrapper } from '../components/MainSectionWrapper'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const DonatePageTemplate = (props) => {
-  const { title, content, contentComponent, frontmatter } = props
+  const { title, content, frontmatter } = props
 
   return (
     <MainSectionWrapper>

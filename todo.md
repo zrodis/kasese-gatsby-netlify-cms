@@ -20,6 +20,7 @@
     -   education page
 
 -   add google analytics
+-   monitor website status - get alert when it goes down
 
 -   ask jim
     -   is it the same donation link as CHERA?
