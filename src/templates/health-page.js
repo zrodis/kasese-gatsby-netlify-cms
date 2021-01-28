@@ -27,7 +27,6 @@ export const HealthPageTemplate = (props) => {
     <div>
       <FullWidthImageHeader heading={heading} image={image} />
       <MainSectionWrapper>
-
         <div className="content">
           <div className="content">
             <div className="tile">
@@ -39,10 +38,10 @@ export const HealthPageTemplate = (props) => {
               </p>
             </div>
           </div>
-{/* intro */}
+          {/* intro */}
           <Features gridItems={intro.blurbs} />
         </div>
-        <div style={{margin:'5rem'}}></div>
+        <div style={{ margin: '5rem' }}></div>
         {/* main */}
         <div className="columns">
           <div className="column is-16">
@@ -73,7 +72,7 @@ export const HealthPageTemplate = (props) => {
             </div>
           </div>
         </div>
-      <HTMLContent className="content" content={content} />
+        <HTMLContent className="content" content={content} />
       </MainSectionWrapper>
     </div>
   )
@@ -94,7 +93,7 @@ HealthPageTemplate.propTypes = {
 }
 
 const HealthPage = ({ data }) => {
-  const frontmatter  = data.markdownRemark.frontmatter
+  const frontmatter = data.markdownRemark.frontmatter
 
   return (
     <Layout>

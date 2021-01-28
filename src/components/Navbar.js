@@ -42,12 +42,16 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <div className="has-text-centered navbar-item">
-              <DonateButton              />
+              <DonateButton />
             </div>
 
-              <Link to="/" id='kchef-logo' className="navbar-item" title="Logo">
-                <img src={logoKchef} style={{maxHeight: '5rem', width: '9rem', height: 'auto'}} alt="KCHEF" />
-              </Link>
+            <Link to="/" id="kchef-logo" className="navbar-item" title="Logo">
+              <img
+                src={logoKchef}
+                style={{ maxHeight: '5rem', width: '9rem', height: 'auto' }}
+                alt="KCHEF"
+              />
+            </Link>
 
             {/* { 
               this.state.navBarActiveClass === '' &&
