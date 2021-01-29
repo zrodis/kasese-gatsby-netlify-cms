@@ -8,6 +8,7 @@ export const FullWidthImageHeader = ({ heading, image }) => {
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
+        backgroundPosition: 'center'
       }}
     >
       <h1

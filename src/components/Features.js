@@ -3,10 +3,20 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import { kaseseBlack } from '../components/Layout'
 
+const isWide = (count, index) => {
+  const isOdd = count % 2 ? 1 : 0
+  const isFirst = index === 0 
+  
+  return isOdd && isFirst
+}
+
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
-    {gridItems.map((item) => (
-      <div key={item.text} className="column is-6">
+    {gridItems.map((item, index) => {
+      const wide = isWide(gridItems.length, index)
+      const colWidth = wide ? "is-12" : "is-6"
+
+      return <div key={item.text} className={`column ${colWidth}`}>
         <section
           className="section"
           style={{
@@ -25,8 +35,8 @@ const FeatureGrid = ({ gridItems }) => (
           >
             <div
               style={{
-                width: '400px',
-                height: '250px',
+                width: wide ? '100%' : '400px',
+                height: wide ? '400px' : '250px',
                 display: 'inline-block',
                 overflow: 'hidden',
                 justifySelf: 'center',
@@ -41,7 +51,7 @@ const FeatureGrid = ({ gridItems }) => (
           <p className="has-text-weight-semibold">{item.text}</p>
         </section>
       </div>
-    ))}
+    })}
   </div>
 )
 

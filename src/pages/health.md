@@ -30,14 +30,14 @@ main:
 
         KCHEF contains the only operating theatre in the area. KCHEF lab technicians deliver test results unavailable anywhere else in the region. The clinic includes an ultra sound scanner and radiology services. KCHEF is considered a center of excellence, providing the best care available in Kasese and regularly receiving referrals from other health facilities.
     image1:
-        alt: A close-up of a paper filter filled with ground coffee
+        alt: A close-up of a baby
         image: /img/health_baby_eyes_crop.png
     image2:
-        alt: A green cup of a coffee on a wooden table
+        alt: A woman with a baby
         image: /img/health_hero_crop.png
     image3:
-        alt: Coffee beans
-        image: /img/facebook_2019.jpg
+        alt: A group of kids giving thumbs up
+        image: /img/2021_jan_2_workers_masks.jpg
 ---
 
 ### Making motherhood safer:

@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: KCHEF - Kasese Community Health and Education Foundation
-image: /img/2021_jan_1_covered_benches.jpg
+image: /img/home_page_collage.png
 heading: KCHEF
 subheading: 'Kasese Community[linebreak]Health and Education Foundation'
 mainpitch:

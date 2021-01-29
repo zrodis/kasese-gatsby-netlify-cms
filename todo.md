@@ -5,8 +5,6 @@
 
 -   pages
 
-    -   about page
-        -   an image or two would be nice
     -   education page
     -   contact form
         -   send to jim's email
