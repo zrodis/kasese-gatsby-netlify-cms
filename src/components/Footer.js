@@ -19,7 +19,7 @@ const Footer = class extends React.Component {
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
+          <div className="container">
             <div style={{ maxWidth: '100vw' }} className="columns">
               <div className="column is-4">
                 <section className="menu">
@@ -86,16 +86,14 @@ const Footer = class extends React.Component {
                       style={{ width: '1em', height: '1em' }}
                     />
                   </a>
-                  <a title="vimeo" href="https://vimeo.com">
-                    <img
-                      src={vimeo}
-                      alt="Vimeo"
-                      style={{ width: '1em', height: '1em' }}
-                    />
-                  </a>
+                 
                 </div>
               </div>
             </div>
+          </div>
+          <span className="fine-print">{`© ${new Date().getFullYear()} Kasese Community Health and Education Foundation  -  Kasese, Uganda`}</span>
+          <div>
+          <span className="fine-print"> <Link style={{color: 'white'}} to='/aboutthissite'> About this site</Link></span>
           </div>
         </div>
       </footer>

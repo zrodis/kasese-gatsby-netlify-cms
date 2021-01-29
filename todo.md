@@ -1,11 +1,9 @@
 -   footer
 
-    -   copyright
-    -   my link and gatsbyjs link
+    -   social media
 
 -   pages
 
-    -   education page
     -   contact form
         -   send to jim's email
 
