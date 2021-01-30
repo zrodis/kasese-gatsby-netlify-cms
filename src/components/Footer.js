@@ -64,7 +64,7 @@ const Footer = class extends React.Component {
                   buttonProps={{ className: 'is-large button is-white' }}
                 />
                 <div className="social">
-                  <a title="facebook" href="https://facebook.com">
+                  <a title="facebook" href="https://www.facebook.com/KaseseCommunityHealthandEducation">
                     <img
                       src={facebook}
                       alt="Facebook"
