@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-          trackingIds: ["G-5Y803EEZ63"]
-        },
+        trackingIds: ['G-5Y803EEZ63'],
+      },
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

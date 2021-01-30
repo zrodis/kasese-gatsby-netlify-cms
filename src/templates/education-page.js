@@ -57,7 +57,6 @@ export const EducationPageTemplate = ({
                 </article>
               </div>
             </div>
-            
           </div>
         </div>
         <HTMLContent className="content" content={content} />
@@ -76,7 +75,6 @@ EducationPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-
 }
 
 const EducationPage = ({ data }) => {
@@ -110,47 +108,48 @@ EducationPage.propTypes = {
 export default EducationPage
 
 export const pageQuery = graphql`
-query EducationPageTemplate {
-  markdownRemark(frontmatter: { templateKey: { eq: "education-page" } }) {
-    html
-    frontmatter {
-      title
-      image {
-        childImageSharp {
-          fluid(maxWidth: 2048, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      heading
-      subheading
-      mainpitch {
+  query EducationPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "education-page" } }) {
+      html
+      frontmatter {
         title
-        description
-      }
-      description
-      intro {
-        blurbs {
-          heading
-          image {
-            childImageSharp {
-              fluid(maxWidth: 900, quality: 80) {
-                ...GatsbyImageSharpFluid
-              }
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
-          text
         }
-      }
-      main {
         heading
+        subheading
+        mainpitch {
+          title
+          description
+        }
         description
-        image1 {
-          alt
-          image {
-            childImageSharp {
-              fluid(maxWidth: 1075, quality: 72) {
-                ...GatsbyImageSharpFluid
+        intro {
+          blurbs {
+            heading
+            image {
+              childImageSharp {
+                fluid(maxWidth: 900, quality: 80) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            text
+          }
+        }
+        main {
+          heading
+          description
+          image1 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1075, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }
@@ -158,6 +157,4 @@ query EducationPageTemplate {
       }
     }
   }
-}
 `
-

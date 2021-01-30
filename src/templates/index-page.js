@@ -37,25 +37,24 @@ export const IndexPageTemplate = ({
           flexDirection: 'column',
         }}
       >
-        <div className="frontpage-header" style={{padding:'1.2rem'}}>
-
+        <div className="frontpage-header" style={{ padding: '1.2rem' }}>
           <img
             src={logoKchefWhite}
             style={{ fill: '#fff' }}
             alt="Adult and child logo"
           />
 
-        <h2 className="frontpage-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen">
-          {subheading.split('[linebreak]').map((sh) => {
-            return (
-              <React.Fragment key={sh}>
-                {' '}
-                {sh}
-                <br />
-              </React.Fragment>
-            )
-          })}
-        </h2>
+          <h2 className="frontpage-header has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen">
+            {subheading.split('[linebreak]').map((sh) => {
+              return (
+                <React.Fragment key={sh}>
+                  {' '}
+                  {sh}
+                  <br />
+                </React.Fragment>
+              )
+            })}
+          </h2>
         </div>
       </div>
     </div>

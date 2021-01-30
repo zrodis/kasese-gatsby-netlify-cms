@@ -64,20 +64,29 @@ const Footer = class extends React.Component {
                   buttonProps={{ className: 'is-large button is-white' }}
                 />
                 <div className="social">
-                  <a title="facebook" href="https://www.facebook.com/KaseseCommunityHealthandEducation">
+                  <a
+                    title="facebook"
+                    href="https://www.facebook.com/KaseseCommunityHealthandEducation"
+                  >
                     <img
                       src={facebook}
                       alt="Facebook"
                       style={{ width: '1em', height: '1em' }}
                     />
-                  </a>                 
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           <span className="fine-print">{`© ${new Date().getFullYear()} Kasese Community Health and Education Foundation  -  Kasese, Uganda`}</span>
           <div>
-          <span className="fine-print"> <Link style={{color: 'white'}} to='/aboutthissite'> About this site</Link></span>
+            <span className="fine-print">
+              {' '}
+              <Link style={{ color: 'white' }} to="/aboutthissite">
+                {' '}
+                About this site
+              </Link>
+            </span>
           </div>
         </div>
       </footer>
