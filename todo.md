@@ -1,6 +1,6 @@
 -   footer
 
-    -   social media
+    -   social media, is there anything besides facebook?
 
 -   add conversion tracking for paypal google analytics
 
