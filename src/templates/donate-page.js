@@ -25,7 +25,7 @@ export const DonatePageTemplate = (props) => {
             src="http://cherahealth.org/wp-content/uploads/2019/01/donate_viapaypal_large.png"
             border="0"
             name="submit"
-            title="PayPal - The safer, easier way to pay online!"
+            title="Donate with PayPal"
             alt="Donate with PayPal button"
           />
           <img

@@ -5,6 +5,12 @@ module.exports = {
       'Working to transform healthcare delivery and educational opportunities in the Rwenzori region of Uganda.',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+          trackingIds: ["G-5Y803EEZ63"]
+        },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
