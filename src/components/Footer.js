@@ -70,23 +70,7 @@ const Footer = class extends React.Component {
                       alt="Facebook"
                       style={{ width: '1em', height: '1em' }}
                     />
-                  </a>
-                  <a title="twitter" href="https://twitter.com">
-                    <img
-                      className="fas fa-lg"
-                      src={twitter}
-                      alt="Twitter"
-                      style={{ width: '1em', height: '1em' }}
-                    />
-                  </a>
-                  <a title="instagram" href="https://instagram.com">
-                    <img
-                      src={instagram}
-                      alt="Instagram"
-                      style={{ width: '1em', height: '1em' }}
-                    />
-                  </a>
-                 
+                  </a>                 
                 </div>
               </div>
             </div>
