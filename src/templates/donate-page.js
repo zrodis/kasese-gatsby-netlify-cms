@@ -22,7 +22,7 @@ export const DonatePageTemplate = (props) => {
           <input type="hidden" name="hosted_button_id" value="QNXXHQ6MYBSNC" />
           <input
             type="image"
-            src="http://cherahealth.org/wp-content/uploads/2019/01/donate_viapaypal_large.png"
+            src="/img/donate_viapaypal_large.png"
             border="0"
             name="submit"
             title="Donate with PayPal"

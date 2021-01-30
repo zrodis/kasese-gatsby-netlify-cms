@@ -2,7 +2,6 @@
 
     -   social media
 
--   add google analytics
--   monitor website status - get alert when it goes down
+-   add conversion tracking for paypal google analytics
 
--   donate button is a cherahealth global link
+-   monitor website status - get alert when it goes down
