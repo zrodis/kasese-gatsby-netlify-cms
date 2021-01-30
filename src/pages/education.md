@@ -23,7 +23,7 @@ intro:
               35% more likely to have a professional job.
 
 main:
-    heading: Support Now Means Self-reliance For the Future
+    heading: Supporting Now Means Self-reliance For the Future
     description: >
         The Rwenzori Region is home to 15,000 to 20,000 orphans, many living in families headed by siblings in their early teens, and other vulnerable children. Supporting and guiding these young people until they are self-sufficient and able join the community as contributing adults is essential for the future of the region.
     image1:
