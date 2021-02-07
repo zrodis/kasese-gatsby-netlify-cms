@@ -52,8 +52,6 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>
               </div>
-             
-
               <div className="column is-4">
                 <DonateButton
                   buttonProps={{ className: 'is-large button is-white' }}
@@ -61,13 +59,14 @@ const Footer = class extends React.Component {
               </div>
             </div>
           </div>
-          <div style={{margin: '1.5em'}}>
-            Stay up to date by following us on Facebook:<br/>
+          <div style={{ margin: '4em' }}>
+            Stay up to date by following us on Facebook:
+            <br />
             <a
               title="KCHEF Facebook"
               href="https://www.facebook.com/KaseseCommunityHealthandEducation"
               className="light-link"
-              style={{margin: '10px', fontSize: '1.5em'}}
+              style={{ margin: '10px', fontSize: '1.5em' }}
             >
               <img
                 src={facebook}
@@ -80,8 +79,7 @@ const Footer = class extends React.Component {
               title="CHERA facebook"
               href="https://www.facebook.com/CHERAhealth/"
               className="light-link"
-              style={{margin: '10px', fontSize: '1.5em'}}
-
+              style={{ margin: '10px', fontSize: '1.5em' }}
             >
               <img
                 src={facebook}
