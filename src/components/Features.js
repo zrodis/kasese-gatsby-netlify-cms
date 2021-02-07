@@ -15,6 +15,7 @@ const FeatureGrid = ({ gridItems }) => (
     {gridItems.map((item, index) => {
       const wide = isWide(gridItems.length, index)
       const colWidth = wide ? 'is-12' : 'is-6'
+      const maxWidth = wide ? 'inherit': '450px'
 
       return (
         <div key={item.text} className={`column ${colWidth}`}>
@@ -25,7 +26,7 @@ const FeatureGrid = ({ gridItems }) => (
               color: '#fff',
               borderRadius: '5px',
               padding: '1.5rem',
-              maxWidth: '450px',
+              maxWidth: maxWidth,
               margin: '0 auto',
             }}
           >
