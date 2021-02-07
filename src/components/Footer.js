@@ -35,17 +35,6 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
                       <Link className="navbar-item" to="/health">
                         Health
                       </Link>
@@ -55,9 +44,15 @@ const Footer = class extends React.Component {
                         Education
                       </Link>
                     </li>
+                    <li>
+                      <Link className="navbar-item" to="/contact">
+                        Contact
+                      </Link>
+                    </li>
                   </ul>
                 </section>
               </div>
+             
 
               <div className="column is-4">
                 <DonateButton
@@ -67,6 +62,7 @@ const Footer = class extends React.Component {
             </div>
           </div>
           <div style={{margin: '1.5em'}}>
+            Stay up to date by following us on Facebook:<br/>
             <a
               title="KCHEF Facebook"
               href="https://www.facebook.com/KaseseCommunityHealthandEducation"
