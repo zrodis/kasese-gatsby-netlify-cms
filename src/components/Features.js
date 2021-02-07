@@ -25,6 +25,8 @@ const FeatureGrid = ({ gridItems }) => (
               color: '#fff',
               borderRadius: '5px',
               padding: '1.5rem',
+              maxWidth: '450px',
+              margin: '0 auto'
             }}
           >
             <h1 className="has-text-centered white-header-override">
