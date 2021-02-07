@@ -20,7 +20,7 @@ const Footer = class extends React.Component {
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container">
-            <div style={{ maxWidth: '100vw' }} className="columns">
+            <div className="columns">
               <div className="column is-4">
                 <section className="menu">
                   <ul className="menu-list">
@@ -63,20 +63,37 @@ const Footer = class extends React.Component {
                 <DonateButton
                   buttonProps={{ className: 'is-large button is-white' }}
                 />
-                <div className="social">
-                  <a
-                    title="facebook"
-                    href="https://www.facebook.com/KaseseCommunityHealthandEducation"
-                  >
-                    <img
-                      src={facebook}
-                      alt="Facebook"
-                      style={{ width: '1em', height: '1em' }}
-                    />
-                  </a>
-                </div>
               </div>
             </div>
+          </div>
+          <div style={{margin: '1.5em'}}>
+            <a
+              title="KCHEF Facebook"
+              href="https://www.facebook.com/KaseseCommunityHealthandEducation"
+              className="light-link"
+              style={{margin: '10px', fontSize: '1.5em'}}
+            >
+              <img
+                src={facebook}
+                alt="KCHEF Facebook"
+                style={{ width: '0.8em', height: '0.8em', marginRight: '4px' }}
+              />
+              KCHEF
+            </a>
+            <a
+              title="CHERA facebook"
+              href="https://www.facebook.com/CHERAhealth/"
+              className="light-link"
+              style={{margin: '10px', fontSize: '1.5em'}}
+
+            >
+              <img
+                src={facebook}
+                alt="CHERA Facebook"
+                style={{ width: '0.8em', height: '0.8em', marginRight: '4px' }}
+              />
+              CHERA
+            </a>
           </div>
           <span className="fine-print">{`© ${new Date().getFullYear()} Kasese Community Health and Education Foundation  -  Kasese, Uganda`}</span>
           <div>
