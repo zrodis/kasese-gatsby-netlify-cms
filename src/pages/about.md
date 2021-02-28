@@ -17,7 +17,7 @@ intro:
               The mission of KCHEF serves the community of Kasese through health care for women and infants and education for children.
 ---
 
--   [The Education Program](/education) provides critically needed education to more than 450 vulnerable children in primary and secondary school as well as vocational and university education.
+-   [The Education Program](/education) provides critically needed education to vulnerable children in primary and secondary school as well as vocational and university education.
 -   [The Health Program](/health) supports the KCHEF Medical Center
 -   The clinic staff manages community outreach programs to deliver public health services to outlying communities including childhood vaccinations, male circumcision and pre-natal care.
 
