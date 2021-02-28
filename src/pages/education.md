@@ -36,7 +36,7 @@ main:
 **KCHEF follows a holistic model in which donations enable coordinated health care, emotional, and social support, as well as school fees to children.**
 
 -   The current cost for annual support of an individual child, including fees, books, clothing, health care, and the staff of two to oversee the program is $500.
--   More than 560 children are now enrolled in our education program. 54% are girls, 46% boys.
--   More than 100 KCHEF students have graduated in different disciplines from universities in Uganda. Several have returned to KCHEF as medical professionals and other staff members.
+-   More than 170 children are now enrolled in our education program. 54% are girls, 46% boys.
+-   More than 220 KCHEF students have graduated in different disciplines from universities in Uganda. Several have returned to KCHEF as medical professionals and other staff members.
 
 KCHEF’s holistic approach to funding the education program secures not only committed donors for education fees, but also oversees children’s health care, home life, and social development by our own leadership and staff.
