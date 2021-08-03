@@ -6,6 +6,7 @@ import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
 import { DonateButton } from './DonateButton'
+import logoKchef from '../img/logo/KASESE_LOGO.gif'
 
 const Footer = class extends React.Component {
   render() {
@@ -13,9 +14,9 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           <img
-            src={logoKchefWhite}
+            src={logoKchef}
             alt="KCHEF"
-            style={{ width: '14em', height: '10em' }}
+
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">

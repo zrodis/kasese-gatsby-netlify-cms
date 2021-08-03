@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logoKchef from '../img/logo/kchef_logo_2021_Karla-outline.svg'
+import logoKchef from '../img/logo/KASESE_LOGO.gif'
+import logoKchefCropped from '../img/logo/KCHEF-Logo.png'
 import { DonateButton } from './DonateButton'
 
 const Navbar = class extends React.Component {
@@ -47,7 +48,7 @@ const Navbar = class extends React.Component {
 
             <Link to="/" id="kchef-logo" className="navbar-item" title="Logo">
               <img
-                src={logoKchef}
+                src={logoKchefCropped}
                 style={{ maxHeight: '5rem', width: '9rem', height: 'auto' }}
                 alt="KCHEF"
               />
